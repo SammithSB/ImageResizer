@@ -12,3 +12,4 @@ C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\refin
 C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.pdb
 C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.genruntimeconfig.cache
 C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ref\ImageResizer.dll
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.sourcelink.json

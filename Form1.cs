@@ -21,40 +21,64 @@ namespace ImageResizer
 
         private void InitializeCustomComponents()
         {
+            TableLayoutPanel panel = new TableLayoutPanel
+            {
+                ColumnCount = 2,
+                RowCount = 4, // Adjusted number of rows for better distribution
+                Dock = DockStyle.Fill,
+                AutoSize = true
+            };
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            panel.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F)); // Smaller button row
+            panel.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F)); // Smaller input row
+            panel.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F)); // Smaller button row
+            panel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F)); // Larger image view row
+
             btnOpenImage = new Button
             {
                 Text = "Open Image",
-                Location = new Point(10, 10)
+                Dock = DockStyle.Fill
             };
             btnOpenImage.Click += BtnOpenImage_Click;
 
             txtWidth = new TextBox
             {
                 PlaceholderText = "Width",
-                Location = new Point(10, 50)
+                Dock = DockStyle.Fill
             };
 
             txtHeight = new TextBox
             {
                 PlaceholderText = "Height",
-                Location = new Point(150, 50)
+                Dock = DockStyle.Fill
             };
 
             btnResizeAndSave = new Button
             {
                 Text = "Resize and Save",
-                Location = new Point(10, 90)
+                Dock = DockStyle.Fill
             };
             btnResizeAndSave.Click += BtnResizeAndSave_Click;
 
             pictureBox = new PictureBox
             {
-                Location = new Point(10, 130),
-                Size = new Size(360, 200),
-                BorderStyle = BorderStyle.Fixed3D
+                Dock = DockStyle.Fill,
+                BorderStyle = BorderStyle.Fixed3D,
+                SizeMode = PictureBoxSizeMode.Zoom
             };
 
-            this.Controls.AddRange(new Control[] { btnOpenImage, txtWidth, txtHeight, btnResizeAndSave, pictureBox });
+            // Adding controls to the TableLayoutPanel
+            panel.Controls.Add(btnOpenImage, 0, 0);
+            panel.SetColumnSpan(btnOpenImage, 2); // Span the button across two columns
+            panel.Controls.Add(txtWidth, 0, 1);
+            panel.Controls.Add(txtHeight, 1, 1);
+            panel.Controls.Add(btnResizeAndSave, 0, 2);
+            panel.SetColumnSpan(btnResizeAndSave, 2); // Span the button across two columns
+            panel.Controls.Add(pictureBox, 0, 3);
+            panel.SetRowSpan(pictureBox, 1); // Span the PictureBox across one large row
+
+            this.Controls.Add(panel);
         }
 
         private void BtnOpenImage_Click(object? sender, EventArgs e)
@@ -80,6 +104,7 @@ namespace ImageResizer
                 MessageBox.Show("Please open an image first.");
                 return;
             }
+
             if (!int.TryParse(txtWidth.Text, out int width) || !int.TryParse(txtHeight.Text, out int height))
             {
                 MessageBox.Show("Please enter valid numbers for width and height.");
