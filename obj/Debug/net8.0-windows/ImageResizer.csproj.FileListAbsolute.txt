@@ -1,0 +1,14 @@
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.AssemblyInfoInputs.cache
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.AssemblyInfo.cs
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.csproj.CoreCompileInputs.cache
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\bin\Debug\net8.0-windows\ImageResizer.exe
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\bin\Debug\net8.0-windows\ImageResizer.deps.json
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\bin\Debug\net8.0-windows\ImageResizer.runtimeconfig.json
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\bin\Debug\net8.0-windows\ImageResizer.dll
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\bin\Debug\net8.0-windows\ImageResizer.pdb
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.dll
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\refint\ImageResizer.dll
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.pdb
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ImageResizer.genruntimeconfig.cache
+C:\Users\Sammith.Bharadwaj\Downloads\ImageResizer\obj\Debug\net8.0-windows\ref\ImageResizer.dll
